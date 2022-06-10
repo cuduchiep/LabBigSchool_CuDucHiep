@@ -1,4 +1,5 @@
 ﻿using LabBigSchool_CuDucHiep.Models;
+using LabBigSchool_CuDucHiep.ViewModels;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,7 @@ namespace LabBigSchool_CuDucHiep.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             if(!ModelState.IsValid)

@@ -22,25 +22,5 @@ namespace LabBigSchool_CuDucHiep.Models
         public byte CategoryId { get; set; }
 
     }
-    public class CourseViewModel
-    {
-        [Required]
-        public string Place { get; set; }
-        [Required]
-        
-        public string Date { get; set; }
-        [Required]
-        public string Time { get; set; }
-        [Required]
-        public byte Category { get; set; }
-        public IEnumerable<Category> Categories { get; set; }
-        public DateTime GetDateTime()
-        {
-            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
-        }
-
-    }
-
-
-
+    
 }
