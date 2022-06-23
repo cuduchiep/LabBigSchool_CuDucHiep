@@ -21,6 +21,7 @@ namespace LabBigSchool_CuDucHiep.Controllers
                 .Include(c => c.Lecturer)
                 .Include(c => c.Category)
                 .Where(c => c.DateTime > DateTime.Now);
+            
             return View(upcommingCourses);
         }
 
